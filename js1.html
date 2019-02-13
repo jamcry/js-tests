@@ -7,9 +7,16 @@
     <p style="text-align: center;">This is basic JavaScript exercise page. Check the JS log.</p>
     <div style="text-align: center;">
         <button>Open Console (or Not)</button>
+        <button>Test Button</button>
     </div>
     
     <script>
+        let button = document.querySelector('button');
+
+        button.onclick = function() {
+            let name = prompt(" What is your name? ");
+            alert(`Hello ${name}, sorry, this option is unavailable!`);
+        }
         console.log("Hello JS!")
         let ex1 = 450 + 2;
         console.log("2 numbers: " + ex1)
@@ -27,6 +34,7 @@
         console.log("percentage = " + percentage + "%")
         const USERNAME_ADMIN = "JamCry";
         console.log("ADMIN: " + USERNAME_ADMIN.toUpperCase())
+        console.log(`a + b = ${a+b}`)
     </script>
 </body>
 </html>>

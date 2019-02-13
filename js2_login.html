@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Login Page
+    </title>
+</head>
+
+<body>
+    <button>Login</button>
+    <script>
+        let loginButton = document.querySelector("button");
+
+        loginButton.onclick = function() {
+            let userName = prompt("Who are you?");
+
+            if (userName == "Admin") {
+
+                let password = prompt("Password?");
+                
+                if (password == "Master") {
+                    alert("Welcome Admin!");
+                    document.write("Logged-in as Admin!");
+                }
+                
+                else if (password == '' || password == null) {
+                    alert("Canceled login.");
+                }
+
+                else {
+                    alert("Wrong password!");
+                }
+
+            }
+
+            else if (userName == '' || userName == null) {
+                alert("Canceled login.")
+            }
+            
+            else {
+                alert("You are not registered!")
+            }
+        }
+   
+    </script>
+</body>
