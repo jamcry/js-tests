@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Simple JS Calendar</title>
+        <style>
+            * {
+                font-family: Arial;
+            }
+            li {
+                display: block;
+                float: left;
+                width: 10%;
+                border: 2px solid white;
+                border-radius: 10px;
+                padding: 5px;
+                height: 40px;
+                background-color: #1a237e;
+                color: white;
+                text-align: right;
+            }
+            .output {
+                text-align: center;
+                box-sizing: border-box;
+                width: 50%;
+            }
+        </style>
+    </head>
+
+    <body>
+            
+        <h1>JavaScript Calendar</h1>
+        <label for="month">Select a month: </label>
+        <select id="month">
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="december">December</option>
+        </select>
+        <div class="output">
+            <h2></h2> <!-- Name of the month -->
+            <ul></ul> <!-- Days in the month -->
+        </div>
+        
+        <script src="js5_calendar.js"></script>
+    </body>
+</html>
